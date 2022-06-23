@@ -212,7 +212,7 @@ def mostrarFigurasClustering(valor_k, figuras_clustering, figura_metodo_codo, pr
     mostrarTitulo(4, 'Número de clusters elegido de forma automática: ' + str(valor_k))
     st.pyplot(figura_metodo_codo)
 
-    mostrarTitulo(3, 'Clustering con ' + str(valor_k) + ' clusters')
+    mostrarTitulo(3, 'KMedoids con ' + str(valor_k) + ' clusters')
 
     mostrarTitulo(4, 'Cantidad de partidas por cluster')
     st.plotly_chart(figuras_clustering[0])   
