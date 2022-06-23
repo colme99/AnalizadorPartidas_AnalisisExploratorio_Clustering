@@ -265,7 +265,7 @@ def main():
 
 
     if len(columnas) == 31:
-        
+
         with st.expander(texto_seleccionar_dataset):
             # Subir el dataset
             fichero_subido = st.file_uploader('', type = extension_fichero_conjunto_datos, accept_multiple_files = False)
@@ -287,7 +287,7 @@ def main():
 
                 with st.expander(nombre_seccion_atributos_utilizados):
                     mostrarTitulo(3, nombre_seccion_atributos_utilizados)
-                    mostrarTituloJustificado(4, 'A continuación, se muestra una breve descripción de los atributos seleccionados')
+                    mostrarTituloJustificado(4, 'A continuación, se muestra una breve descripción de los atributos utilizados')
                     explicaciones_atributos_mostrar = explicacionesAtributos(columnas)
                     mostrarListaTexto(explicaciones_atributos_mostrar)
 
@@ -303,7 +303,7 @@ def main():
                 with st.sidebar:
                     secciones_seleccionadas = st.multiselect(
                                             texto_seleccionar_seciones,
-                                            [nombre_seccion_analisis_exploratorio_datos, nombre_seccion_analisis_lado_mapa, nombre_seccion_analisis_continentes, nombre_seccion_clustering, nombre_seccion_predecir_resultado_partida, nombre_seccion_predecir_mejor_predictor_resultado_partida])
+                                            [nombre_seccion_analisis_exploratorio_datos, nombre_seccion_analisis_lado_mapa, nombre_seccion_analisis_continentes, nombre_seccion_clustering])
                 aumentarAnchuraBarraLateral()
 
 
