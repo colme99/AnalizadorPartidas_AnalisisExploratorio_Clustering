@@ -49,9 +49,9 @@ nombre_atributo_continente = 'continent'
 nombre_atributo_lado_mapa = 'mapside'
 enlace_web_lol_fandom_wiki = 'https://lol.fandom.com/wiki/'
 enlace_web_wikipedia_ligas_lol = 'https://en.wikipedia.org/wiki/List_of_League_of_Legends_leagues_and_tournaments'
-texto_seleccionar_dataset = 'Sube el conjunto de datos'
-texto_indicar_caracteriscas_dataset = 'Indique el nombre de los atributos y el separador del conjunto de datos (CSV)'
-texto_seleccionar_seciones = 'Selecciona las secciones que quieres visualizar'
+texto_seleccionar_dataset = 'Suba el conjunto de datos'
+texto_indicar_caracteriscas_dataset = 'Indique el nombre de los atributos del conjunto de datos'
+texto_seleccionar_seciones = 'Seleccione las secciones que quieres visualizar'
 extension_fichero_conjunto_datos = {'csv'}
 etiquetas_equipo = ['t1_', 't2_']
 
