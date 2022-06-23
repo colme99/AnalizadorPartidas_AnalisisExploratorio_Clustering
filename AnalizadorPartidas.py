@@ -208,7 +208,7 @@ def mostrarVariasFiguras(figuras):
 
 def mostrarFigurasClustering(valor_k, figuras_clustering, figura_metodo_codo, precision_clasificacion_clusters, nombre_metrica):
     
-    mostrarTituloJustificado(3, 'Determinar automáticamente el número de clusters utilizando como métrica ' + nombre_metrica + ' y como distancia la Distancia de Gower (al haber información mixta: numérica y categórica)')
+    mostrarTituloJustificado(3, 'Determinar automáticamente el número de clusters utilizando como métrica ' + nombre_metrica + ' y como distancia la distancia de Gower')
     mostrarTitulo(4, 'Número de clusters elegido de forma automática: ' + str(valor_k))
     st.pyplot(figura_metodo_codo)
 
@@ -220,7 +220,7 @@ def mostrarFigurasClustering(valor_k, figuras_clustering, figura_metodo_codo, pr
     mostrarTitulo(4, 'Porcentaje de victorias por cluster')
     st.plotly_chart(figuras_clustering[1])   
 
-    mostrarTituloJustificado(4, 'Para saber los atributos que más difieren entre clusters se utiliza un modelo de bosque aleatorio para predecir el cluster al que pertenece cada partida. Para determinar la importancia de los atributos se utiliza la importancia por permutación. Precisión del modelo: ' + str(round(precision_clasificacion_clusters, 3)))
+    mostrarTituloJustificado(4, 'Para estimar los atributos que más difieren entre clusters se utiliza un modelo de bosque aleatorio para predecir el cluster al que pertenece cada partida. Para determinar la importancia de los atributos se utiliza la importancia por permutación. Precisión del modelo: ' + str(round(precision_clasificacion_clusters, 3)))
     mostrarTitulo(4, 'Atributos en los que más difieren los clusters')
     st.plotly_chart(figuras_clustering[2]) 
 
